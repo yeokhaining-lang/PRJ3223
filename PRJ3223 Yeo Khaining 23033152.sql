@@ -27,5 +27,3 @@ SELECT
 FROM solar_hourly s
 LEFT JOIN ghi_forecasts f
   ON s.site_id = f.site_id AND s.ts_hour = f.forecast_ts;
-
-Export model_features as CSV for SAS Studio or connect SAS to the database (ODBC/JDBC).
